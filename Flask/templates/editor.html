@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{{TITLE}}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/editor.css') }}">
+    </head>
+
+    <body>
+        <div id="head">
+            <h1>Custom Wiki</h1>
+            <input type="text">
+            <div id="dark-mode" class="btn">Dark Mode</div>
+        </div>
+        
+
+        <span id="publish-controls">
+            <div id="publish" class="btn">Publish</div>
+            <div id="cancel" class="btn">Cancel</div>
+         </span>
+
+        <span>Title: <input name="title" id="title"></span>
+        <span id="paragraphs"></span>
+
+         <div id="add" class="btn">Add Paragraph</div>
+    </body>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/editor.js') }}"></script>
+</html>

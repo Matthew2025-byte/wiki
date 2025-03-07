@@ -1,0 +1,38 @@
+
+
+#add {
+    margin-top: 15px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px 12px;
+    border: 1px solid var(--table-border);
+    text-align: left;
+    color: var(--text-color);
+}
+
+thead {
+    background-color: var(--header-bg);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--row-bg-even);
+}
+
+tbody tr:hover {
+    background-color: var(--hover-bg);
+}
+
+thead th {
+    background-color: var(--header-color);
+    color: var(--text-color);
+}
+tbody a {
+    color: var(--link-color);
+}

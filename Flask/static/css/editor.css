@@ -1,0 +1,19 @@
+body {display: flex; flex-direction: column;}
+
+.paragraph_format {
+    display: flex;
+    flex-direction: column;
+}
+.paragraph_format textarea {
+    width: 30%;
+}
+#publish-controls {
+    display: flex;
+    flex-direction: row;
+}
+#publish-controls div {
+    margin: 5px;
+}
+#cancel {
+    background-color: grey;
+}
