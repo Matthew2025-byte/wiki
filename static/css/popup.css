@@ -8,6 +8,10 @@
     height: 100%;
     background-color: var(--popup-bg); /* Use variable */
 }
+.popup-content div input {
+    background-color: white;
+    color: black;
+}
 
 .popup-content {
     position: relative;

@@ -3,7 +3,8 @@
     "paragraphs": [
         "CURRENT WIKI VERSION",
         "This wiki version is currently in use, contains basic functionality, and also has some basic styling, though most of the formatting is not complete.",
-        "Requests:<br>\n1. Images<br>",
-        "Patches:<br>\n1. Added clickable logo<br>\n2. Fixed last update timestamp not working<br>\n3. Added dark mode cookie<br>"
+        "Todo:<br>\n1. Fix Cookies<br>\n\n<br>\nRequests:<br>\n1. Images<br>",
+        "Patches:<br>\n1. Added clickable logo<br>\n2. Fixed last update timestamp not working<br>\n3. Added dark mode cookie<br>",
+        "Bugs:<br>\n1. Dark Mode cookie does not transfer between pages"
     ]
 }

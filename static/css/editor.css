@@ -1,13 +1,5 @@
 body {display: flex; flex-direction: column;}
 
-.paragraph_format {
-    display: flex;
-    flex-direction: column;
-}
-.paragraph_format textarea {
-    width: 30%;
-    height: 20vh;
-}
 #publish-controls {
     display: flex;
     flex-direction: row;
@@ -17,4 +9,11 @@ body {display: flex; flex-direction: column;}
 }
 #cancel {
     background-color: grey;
+}
+
+#editor {
+    border: black solid;
+    width: 50vh;
+    padding: 5px;
+    white-space: prewrap;
 }

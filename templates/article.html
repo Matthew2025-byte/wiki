@@ -4,6 +4,7 @@
     <head>
         <title>{{TITLE}}</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/article.css') }}">
     </head>
 
     <body>
@@ -11,10 +12,10 @@
             <span id="logo">
                 <h1>Wiki 1.0</h1>
             </span>
-            
-            <input type="text">
+            <input id="Search-Bar" type="text">
             <div id="dark-mode" class="btn">Dark Mode</div>
         </div>
+
 
         <div id="edit" class="btn">Edit</div>
         <div id="page">
