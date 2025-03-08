@@ -9,6 +9,12 @@ body {
 
     border-bottom: solid 2px;
 }
+#logo {
+    width: fit-content;
+}
+#logo:hover {
+    cursor: pointer;
+}
 input[type="text"] {
     max-height: fit-content;
     width: 50vh;

@@ -6,6 +6,7 @@ body {display: flex; flex-direction: column;}
 }
 .paragraph_format textarea {
     width: 30%;
+    height: 20vh;
 }
 #publish-controls {
     display: flex;

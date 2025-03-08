@@ -47,13 +47,7 @@ def api_INDEX_HANDLER():
             "title": data.get("Title"),
             "url": "null",
             "file": "null",
-            "updated": {
-                "year": now.year,
-                'month': now.strftime('%B'),
-                "day": now.day,
-                "hour": now.hour,
-                "minute": now.minute
-            },
+            "updated": api.get_time(),
             "created": {
                 "year": now.year,
                 'month': now.strftime('%B'),

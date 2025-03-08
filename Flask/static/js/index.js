@@ -8,7 +8,6 @@ function FormatTableEntry(EntryJson) {
     `
 }
 function FormatTime(TimeJson) {
-    console.log(TimeJson)
     return `${TimeJson["month"]} ${TimeJson["day"]}, ${TimeJson["year"]} - ${TimeJson["hour"]}:${TimeJson["minute"]}`
 }
 

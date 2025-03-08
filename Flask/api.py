@@ -1,5 +1,6 @@
 import json
 import jsonschema
+from datetime import datetime
 
 def get_article(url):
     with open(f"wiki/article-list.json") as file:
@@ -50,9 +51,21 @@ def edit_article(edits: dict):
         data = json.load(file)
     for entry in data:
         if entry["title"] == edits["title"]:
+            entry["updated"] = get_time()
             with open(entry["file"], "w") as file:
                 json.dump(edits, file, indent=4)
-                return
+            with open("wiki/article-list.json", "w") as file:
+                json.dump(data, file, indent=4)
+            return
         continue
 
     
+def get_time():
+    now = datetime.now()
+    return {
+                "year": now.year,
+                'month': now.strftime('%B'),
+                "day": now.day,
+                "hour": now.hour,
+                "minute": now.minute
+            }
