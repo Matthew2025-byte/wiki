@@ -12,7 +12,6 @@ document.getElementById("dark-mode").addEventListener("click", function() {
     }
 });
 document.addEventListener("DOMContentLoaded", function() {
-    console.log(document.cookie)
     var darkMode = document.cookie;
     if (darkMode == "darkMode=enabled") {
         console.log("dark mode enabled")

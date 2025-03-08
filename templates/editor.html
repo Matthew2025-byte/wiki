@@ -20,9 +20,15 @@
         <span id="publish-controls">
             <div id="publish" class="btn">Publish</div>
             <div id="cancel" class="btn">Cancel</div>
-         </span>
+        </span>
 
-        <div id="editor" contenteditable="true">Text</div>
+
+        <div id="editor">
+            <div id="editor-text" contenteditable="true">
+            </div>
+        </div>
+
+
     </body>
     <script src="{{ url_for('static', filename='js/app.js') }}"></script>
     <script src="{{ url_for('static', filename='js/editor.js') }}"></script>

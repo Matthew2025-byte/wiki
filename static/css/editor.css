@@ -11,7 +11,7 @@ body {display: flex; flex-direction: column;}
     background-color: grey;
 }
 
-#editor {
+#editor-text {
     border: black solid;
     width: 50vh;
     padding: 5px;

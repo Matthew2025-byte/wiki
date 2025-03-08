@@ -29,15 +29,8 @@ def api_WIKI_HANDLER(article):
 
 @app.route("/api/editor/<article>", methods=["POST"])
 def api_EDITOR_HANDLER(article):
-    print("activated")
-    data = request.get_json()
-    print(data)
-    Update = {
-        "title": article,
-        "paragraphs": [data["text"]]
-    }
-    api.edit_article(Update)
-    return "suceeded", 200
+    api.edit_article(request.get_json())
+    return "suceeded"
 
 @app.route("/api/article-list", methods=["GET", "POST"])
 def api_INDEX_HANDLER():

@@ -50,7 +50,7 @@ def edit_article(edits: dict):
     with open("wiki/article-list.json") as file:
         data = json.load(file)
     for entry in data:
-        if entry["title"] == edits["title"]:
+        if entry["title"] == edits["Document-Info"]["title"]:
             entry["updated"] = get_time()
             with open(entry["file"], "w") as file:
                 json.dump(edits, file, indent=4)
